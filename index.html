@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" ng-app="ecommerceApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>E-COMMEX</title>
+
+  <!-- JQUERY -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- ANGULAR  -->
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+  <!-- LODASH  -->
+  <script src="node_modules/lodash/lodash.min.js"></script>
+
+  <!-- PROMISE  -->
+  <script src="node_modules/bluebird/js/browser/bluebird.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="page-header">
+      <h1>
+        E-Commex
+      </h1>
+    </div>
+
+    <!-- <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a ui-sref="home" ui-sref-active="active" >El Mundo</a>
+      </li>
+      <li>
+        <a ui-sref="entrenador" ui-sref-active="active" id="teal">Entrenador</a>
+      </li>
+    </ul> -->
+    
+    <div class="well-lg">
+      <div ui-view></div>
+    </div>
+
+  </div>
+
+  <!-- js -->
+  <script src="controllers/HomeController.js"></script>
+  <script src="routes.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
