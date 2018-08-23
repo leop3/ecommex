@@ -4,7 +4,7 @@ var routes = ($stateProvider, $urlRouterProvider) => {
         .state('home', {
             url: "/",
             templateUrl: "partials/home.html",
-            controller: "homeController"
+            // controller: "homeController"
         })
         .state('coaching', {
             url: "/",
