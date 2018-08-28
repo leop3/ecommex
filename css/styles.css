@@ -1,0 +1,156 @@
+    /* .font {
+      display: block;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+    }
+    .noPoint{
+      list-style-type: none;
+    }
+    .grayText{
+      color: gray;
+      
+    }
+    .bordear{
+      border-style:solid;
+      border-color: white;
+      text-align:center;
+      background-color: black;
+      height: 4em;
+      
+    }
+    .redondear{
+      border-radius:6%;
+    }
+    li a:hover {
+    background-color:black;
+    color: white;
+    text-decoration: none; //saca el subrayado de un hiperviculo
+     }
+    li a:visited{
+      background-color:black;
+      color: white;
+      text-decoration-color: black;
+      font-style: oblique;
+    } */
+
+    /* * {
+      margin: 0;
+      padding: 0;
+    } */
+    /* @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville'); */
+    
+    @font-face {
+      font-family: Libre;
+      src: url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+      }
+
+    body {
+      background-color: #b3c0d8;
+    }
+
+
+    #menu {
+      background-color: #9b5009;
+      width: 100%;
+      margin: 20px auto;
+      /* #010d21;  azul oscuro*/
+      /* -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg); */
+      /* text-align: center; */
+      /* margin: 10%; */
+    }
+
+    #menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    #menu ul li {
+      display: inline-block;
+      width: calc(100% / 7);
+      margin: 1px;
+    }
+
+    #menu ul li a {
+      color: white;
+      font-weight: bolder;
+      text-decoration: none;
+      text-align: center;
+      /* saca los puntos */
+      display: block;
+      /*hace que se apriete todo el bloque */
+      /*este y padding tienen q ir en conjunto*/
+      padding: 10px 30px;
+      /* padding: 10px; */
+      /*sirve para poner espacio alrededor del texto  */
+      border-bottom: solid;
+      border-bottom-color: aquamarine;
+    }
+
+    #menu ul li a:hover {
+      background-color: gray;
+      color: black;
+    }
+
+    #menu h1 {
+      text-align: center;
+    }
+
+    .item-r {
+      float: right;
+    }
+
+    .pestañas { 
+      background-color: #7498db;
+      /* background-color: #91a0bc; */
+      /* background-color: #031f4c; */
+      height: 100%;
+    }
+
+    #home {
+      color: white;
+    }
+
+    #tab {
+      color: orangered;
+      /* background-color: transparent;
+        background-image:url("http://www.wallpaperk.com/wallpapers/resoluciones/18/world-map-para-pc-planisferio_1440x900_9595.jpg");
+        color: white; */
+    }
+
+    #tab h1 {
+      text-align: center;
+    }
+
+    /* .tam3 {
+      font-size: 3em;
+      font-family: serif;
+    } */
+    #tab header{
+      font-size: 2em;
+      font-family: serif;
+    }
+    #tab div{
+      font-family:'Libre Baskerville', serif;
+    }
+    #tab div ul{
+      font-size: 2em;
+    }
+    #tab div ul ul{
+      font-size: 1em;
+    }
+
+    .tam2 {
+      font-size: 2em;
+    }
+
+    .tam1 {
+      font-size: 1em;
+    }
+
+    .separando {
+      margin: 2%;
+    }
