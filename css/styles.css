@@ -37,22 +37,28 @@
       margin: 0;
       padding: 0;
     } */
+
     /* @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville'); */
-    
+
     @font-face {
       font-family: Libre;
       src: url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
-      }
+    }
 
     body {
       background-color: #b3c0d8;
     }
 
-
     #menu {
-      background-color: #9b5009;
+      background-color: rgb(255, 127, 39);
+      /* background-color: #9b5009; */
+      /* background-color: white; */
       width: 100%;
-      margin: 20px auto;
+      border: ridge;
+      border-color: rgb(255, 98, 39);
+      /* border-color: black; */
+      /* border-style: ridge; */
+      /* margin: 20px auto; */
       /* #010d21;  azul oscuro*/
       /* -webkit-transform: rotate(-90deg);
         -moz-transform: rotate(-90deg); */
@@ -70,12 +76,13 @@
 
     #menu ul li {
       display: inline-block;
-      width: calc(100% / 7);
-      margin: 1px;
+      width: calc(100% / 8);
+      /* margin: 1px; */
     }
 
     #menu ul li a {
-      color: white;
+      /* color: white; */
+      color: black;
       font-weight: bolder;
       text-decoration: none;
       text-align: center;
@@ -83,16 +90,34 @@
       display: block;
       /*hace que se apriete todo el bloque */
       /*este y padding tienen q ir en conjunto*/
-      padding: 10px 30px;
-      /* padding: 10px; */
+      /* padding: 10px 10px; */
+      padding-bottom: 15px;
       /*sirve para poner espacio alrededor del texto  */
-      border-bottom: solid;
-      border-bottom-color: aquamarine;
+      /* border-bottom: solid;
+      border-bottom-color: aquamarine; */
     }
 
+    #menu img {
+      width: 60%;
+      height: 230px;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-left: 20%;
+    }
+
+    /* #menu ul li img {
+      margin-top: 1px;
+      margin-left: 10px;
+      padding-top: 1px;
+      height: 50px;
+      width: 190px;
+      padding: 10px 30px;
+      display: block;
+    } */
+
     #menu ul li a:hover {
-      background-color: gray;
-      color: black;
+      /* background-color: gray; */
+      color: rgb(48, 193, 245);
     }
 
     #menu h1 {
@@ -100,11 +125,22 @@
     }
 
     .item-r {
+      display: block;
       float: right;
     }
 
-    .pestañas { 
-      background-color: #7498db;
+    .tamImg {
+      height: 20px;
+      width: 20px;
+    }
+
+    .pestañas {
+      /* background-color: #7498db; */
+      /* background-color: whitesmoke; */
+      background-color: rgb(48, 193, 245);
+      /* color:#7498db; */
+      border: ridge;
+      border-color: #7498db;
       /* background-color: #91a0bc; */
       /* background-color: #031f4c; */
       height: 100%;
@@ -115,11 +151,18 @@
     }
 
     #tab {
-      color: orangered;
+      /* color: orangered; */
+      color: black;
       /* background-color: transparent;
         background-image:url("http://www.wallpaperk.com/wallpapers/resoluciones/18/world-map-para-pc-planisferio_1440x900_9595.jpg");
         color: white; */
     }
+
+    /* #tab img{
+      height: 250px;
+      width: 500px;
+      text-align: end;
+    } */
 
     #tab h1 {
       text-align: center;
@@ -129,17 +172,21 @@
       font-size: 3em;
       font-family: serif;
     } */
-    #tab header{
+
+    #tab header {
       font-size: 2em;
       font-family: serif;
     }
-    #tab div{
-      font-family:'Libre Baskerville', serif;
+
+    #tab div {
+      font-family: 'Libre Baskerville', serif;
     }
-    #tab div ul{
+
+    #tab div ul {
       font-size: 2em;
     }
-    #tab div ul ul{
+
+    #tab div ul ul {
       font-size: 1em;
     }
 
@@ -153,4 +200,39 @@
 
     .separando {
       margin: 2%;
+    }
+
+    .banner {
+      text-align: center;
+      border: solid;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      font-weight: bolder;
+      color: white;
+      /* background-color: rgb(255, 127, 39);  */
+      background-color: black;
+      font-size: 200%
+    }
+
+    .item-enumeracion {
+      font-weight: bolder;
+    }
+    #tab2 h3{
+      /* font-family: serif; */
+      text-align: center;
+    }
+    #tab2 div a {
+      font-weight: bolder;
+      color:orangered;
+    }
+    /* .parrafo{
+      font-family: fantasy;
+    } */
+
+    #tab2 div a:hover {
+      color: orangered;
+      text-decoration: none;
+    }
+    #tab2 b{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }

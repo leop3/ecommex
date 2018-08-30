@@ -2,35 +2,35 @@ var routes = ($stateProvider, $urlRouterProvider) => {
 
     $stateProvider
         .state('home', {
-            url: "/",
+            url: "/home",
             templateUrl: "partials/home.html",
         })
         .state('coaching', {
-            url: "/",
+            url: "/coaching",
             templateUrl: "partials/coaching.html",
 
         })
         .state('ecommerce', {
-            url: "/",
+            url: "/ecommerce",
             templateUrl: "partials/ecommerce.html",
 
         })
         .state('exportacion', {
-            url: "/",
+            url: "/expoimpo",
             templateUrl: "partials/exportacion.html",
 
         })
         .state('logistica', {
-            url: "/",
+            url: "/logistica",
             templateUrl: "partials/logistica.html",
 
         })
         .state('trading', {
-            url: "/",
+            url: "/trading",
             templateUrl: "partials/trading.html",
 
         })
 
-    $urlRouterProvider.otherwise("/")
+    $urlRouterProvider.otherwise("/home")
 
 }
