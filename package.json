@@ -11,10 +11,22 @@
     "angular": "^1.7.3",
     "angular-ui-router": "^0.4.3",
     "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
     "bootstrap": "^3.3.7",
+    "cors": "^2.8.4",
     "http-server": "^0.10.0",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "nodemailer": "^4.6.8"
   },
   "main": "app.js",
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leop3/ecommex.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/leop3/ecommex/issues"
+  },
+  "homepage": "https://github.com/leop3/ecommex#readme"
 }

@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>E-COMMEX</title>
+  <title>e-Commex</title>
   <!-- <link rel="icon" type="image/png" href="images/world3.png" /> -->
 
   <!-- JQUERY -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- <script src="jquery-3.3.1.min.js"></script> -->
 
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -19,68 +20,43 @@
   <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 
   <!-- LODASH  -->
-  <script src="node_modules/lodash/lodash.min.js"></script>
-
+  <!-- <script src="node_modules/lodash/lodash.min.js"></script> -->
+  
+  
   <!-- PROMISE  -->
   <script src="node_modules/bluebird/js/browser/bluebird.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+
 </head>
 
 <body>
   <!-- ACA VA EL LOGO -->
   <div id="menu">
-      <!-- <img src="images/TEXTOLOGO.png"> -->
-      <img src="images/logoC3.png">
+      <img src="images/logoC4.png">
     <ul>
-        <!-- <li><img src="images/logoC3.png"></li> -->
-        <!-- <li><img src="images/logoGlobo.png"></li> -->
-          <!-- <li><a href=""></a></li> -->
-        <li><a ui-sref="home" ui-sref-active="active"><i class="fas fa-home"></i> HOME</a></li>      
-        <li><a ui-sref="coaching" ui-sref-active="active"><i class="fas fa-users"></i> COACHING</a></li>
-        <li><a ui-sref="ecommerce" ui-sref-active="active"><i class="fas fa-globe"></i> E-COMMERCE</a></li>
-        <li><a ui-sref="exportacion" ui-sref-active="active"><i class="fas fa-plane-departure"></i> EXPORTACIÓN</a></li>
-        <li><a ui-sref="logistica" ui-sref-active="active"><i class="fas fa-dolly"></i> LOGÍSTICA</a></li>
-        <li><a ui-sref="trading" ui-sref-active="active"><i class="far fa-handshake"></i> TRADING</a></li>
+        <!-- <div id="home"> -->
+          <li id="home"><a ui-sref="home" ui-sref-active="active"><i class="fas fa-home"></i> HOME</a></li>      
+        <!-- </div> -->
+          <li id="coaching"><a ui-sref="coaching" ui-sref-active="active"><i class="fas fa-users"></i> COACHING</a></li>
+        <li id="ecommerce"><a ui-sref="ecommerce" ui-sref-active="active"><i class="fas fa-globe"></i> e-Commerce</a></li>
+        <li id="expoimpo"><a ui-sref="exportacion" ui-sref-active="active"><i class="fas fa-plane-departure"></i> EXPO/IMPO</a></li>
+        <li id="logistica"><a ui-sref="logistica" ui-sref-active="active"><i class="fas fa-dolly"></i> LOGÍSTICA</a></li>
+        <li id="trading"><a ui-sref="trading" ui-sref-active="active"><i class="far fa-handshake"></i> TRADING</a></li>
     </ul>
   </div>
 
-  <!-- <div id="menu">
-      <h1>
-        E-Commex
-      </h1>
-      <ul>
-        <li><a ui-sref="home" ui-sref-active="active"><i class="fas fa-home"></i> HOME</a></li>      
-        <li><a ui-sref="coaching" ui-sref-active="active"><i class="fas fa-users"></i> COACHING</a></li>
-        <li><a ui-sref="ecommerce" ui-sref-active="active"><i class="fas fa-globe"></i> E-COMMERCE</a></li>
-        <li><a ui-sref="exportacion" ui-sref-active="active"><i class="fas fa-plane-departure"></i> EXPORTACIÓN</a></li>
-        <li><a ui-sref="logistica" ui-sref-active="active"><i class="fas fa-dolly"></i> LOGÍSTICA</a></li>
-        <li><a ui-sref="trading" ui-sref-active="active"><i class="far fa-handshake"></i> TRADING</a></li>
-      </ul>
-    </div> -->
-
-
-  <!-- <img src="http://www.kinyu-z.net/data/wallpapers/6/720355.png" width="20" height="20" /> -->
-  <!-- <li><a ui-sref="home" ui-sref-active="active"><img src="http://www.kinyu-z.net/data/wallpapers/6/720355.png" width="20"
-        height="20" /></a></li> -->
-
-  <div class="well-lg pestañas">
+  <div id="routers" class="well-lg pestañas">
     <div ui-view></div>
   </div>
-  <!-- <footer class="navbar navbar-fixed-bottom">
-    <li>Direccion: La direccion de mi casa.</li>
-    <li>Telefono: 4747-4747</li>
-    <li>Celular: 1111111111</li>
-
-  </footer> -->
 
   <!-- js -->
+  <script src="jquery.js"></script>
   <script src="controllers/HomeController.js"></script>
   <script src="routes.js"></script>
   <script src="app.js"></script>
-
 </body>
 
 </html>

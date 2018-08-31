@@ -3,31 +3,31 @@ var routes = ($stateProvider, $urlRouterProvider) => {
     $stateProvider
         .state('home', {
             url: "/home",
-            templateUrl: "partials/home.html",
+            templateUrl: "partials/home.html"
         })
         .state('coaching', {
             url: "/coaching",
-            templateUrl: "partials/coaching.html",
+            templateUrl: "partials/coaching.html"
 
         })
         .state('ecommerce', {
             url: "/ecommerce",
-            templateUrl: "partials/ecommerce.html",
+            templateUrl: "partials/ecommerce.html"
 
         })
         .state('exportacion', {
             url: "/expoimpo",
-            templateUrl: "partials/exportacion.html",
+            templateUrl: "partials/exportacion.html"
 
         })
         .state('logistica', {
             url: "/logistica",
-            templateUrl: "partials/logistica.html",
+            templateUrl: "partials/logistica.html"
 
         })
         .state('trading', {
             url: "/trading",
-            templateUrl: "partials/trading.html",
+            templateUrl: "partials/trading.html"
 
         })
 
