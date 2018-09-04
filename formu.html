@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="e requiredn">
+
+<head>
+    <meta charset="utf-8">
+    <br>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Consulta</title>
+    <link rel="stylesheet" href="css/formustyles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body id="formBody">
+    <div class="container">
+        <div class="row nubes" id="form">
+            <h2>Contacto</h2>
+            <div class="col-sm-4">
+                <img src="images/logoN-1.png" class="img">
+            </div>
+            <div class="col-sm-8">
+
+                <form action="/enviar.php" method="post">
+                    <div>
+                        <div class="row">
+                            <label for="names" class="col-sm-6">Nombre:</label>
+                            <input type="text" id="names" name="nombre" class="col-sm-6" placeholder="(Escriba su nombre completo.)" required>
+                        </div>
+                        <div class="row">
+                            <label for="email" class="col-sm-6">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" class="col-sm-6" placeholder="(Escriba su correo electrónico.)" required>
+                        </div>
+                        <div class="row">
+                            <label for="mensaje" class="col-sm-6">Detalle:</label>
+                            <textarea id="mensaje" class="col-sm-6" placeholder="(Escriba su consulta.)" required></textarea>
+                        </div>
+                        <a href="mensajeEnviado.html">ENVIAR</a>
+                        <input type="submit" value="Enviar" id="btnSend" class="btnF">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

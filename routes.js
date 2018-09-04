@@ -29,6 +29,11 @@ var routes = ($stateProvider, $urlRouterProvider) => {
             url: "/trading",
             templateUrl: "partials/trading.html"
 
+            })
+        .state('contacto', {
+            url: "/contacto",
+            templateUrl: "partials/formu.html"
+
         })
 
     $urlRouterProvider.otherwise("/home")

@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Windlesham";
+    src: url("fonts/Windlesham\ Pro\ Light.ttf");
+}
+
+#formBody {
+    margin: 0;
+    padding: 0;
+}
+
+#form h2 {
+    margin-left: 5%;
+    font-size: 500%;
+    margin-bottom: 2%;
+}
+
+/* #form{
+    margin-top:4%;
+} */
+#form textarea {
+    height: 200px;
+    width: 350px;
+    background-color: rgb(255, 127, 39);
+    color: white;
+}
+
+#form input {
+    height: 25px;
+    width: 350px;
+    background-color: rgb(255, 127, 39);
+    border-color: rgb(255, 127, 39);
+    color: white;
+}
+
+#form label {
+    width: 160px;
+    height: 2em;
+}
+
+/* #form div {
+    margin-bottom: 10px;
+} */
+.img {
+    height: 100%;
+    width: 100%;
+    /* margin-top: 20%;
+    background-color: transparent; */
+}
+
+.img2 {
+    height: 50%;
+    width: 50%;
+    /* margin-top: 20%;
+    background-color: transparent; */
+}
+
+.nubes {
+    margin-top: 8%;
+}
+
+.btnF {
+    margin-top: 5%;
+    margin-left: 19%;
+    text-align: center;
+    padding-bottom: 20px;
+    /* padding: 10px 10px; */
+    font-weight: bolder;
+    border-style: ridge;
+    border-color: rgb(255, 120, 39);
+    background-color: rgb(255, 127, 39);
+    color: white;
+    border-radius: 5%;
+}
+
+.sent {
+    font-family: "Windlesham";
+    text-align: center;
+    font-weight: bolder;
+}

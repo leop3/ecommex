@@ -42,6 +42,11 @@
       src: url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
     }
 
+    @font-face {
+      font-family: "Windlesham";
+      src: url("fonts/Windlesham\ Pro\ Light.ttf");
+    }
+
     /* 
     body {
       background-color: #b3c0d8;
@@ -137,28 +142,31 @@
       background-size: cover;
       /* background-attachment: fixed; */
     }
-    .fondocoach{
-      background-image: url('fondo/obelisco.jpg');
+
+    .fondocoach {
+      background-image: url('fondo/coaching_ejecutivo2.png');
       background-size: cover;
     }
-    .fondoecommerce{
-      background-image: url('fondo/obelisco.jpg');
+
+    .fondoecommerce {
+      background-image: url('fondo/ecfondo2.png');
       background-size: cover;
     }
-    .fondoexpoimpo{
+
+    .fondoexpoimpo {
       background-image: url('fondo/pmujer3.png');
       background-size: cover;
     }
-    .fondologistica{
-      background-image: url('fondo/screen.png');
+
+    .fondologistica {
+      background-image: url('fondo/eclogi3.jpg');
       background-size: cover;
     }
-    .fondotrading{
+
+    .fondotrading {
       background-image: url('fondo/obelisco.jpg');
       background-size: cover;
     }
-
-
 
     .pestañas {
       /* background-image: url('fondo/puerti2.png');
@@ -183,6 +191,7 @@
     #tab {
       /* background-color: rgba(0, 0, 0, 0.2); */
       color: black;
+      font-family: "Windlesham";
       /* opacity: 1; */
       /* background-color: transparent; */
       /*  background-image:url("http://www.wallpaperk.com/wallpapers/resoluciones/18/world-map-para-pc-planisferio_1440x900_9595.jpg");
@@ -198,13 +207,16 @@
 
     #tab header {
       text-align: center;
-      font-family: cursive;
+      /* font-family: cursive; */
       font-size: 230%;
     }
 
     #tab ul {
       font-size: 150%;
-      font-family: sans-serif;
+      font-family: "Windlesham";
+      font-weight: bolder;
+      /* font-family: sans-serif; */
+      list-style: none;
     }
 
     #tab ul ul {
@@ -284,6 +296,22 @@
       font-weight: bolder;
     }
 
+    #tab2 {
+      font-family: "Windlesham";
+      font-weight: bolder;
+      color: black;
+      text-shadow: 1px 1px blue;
+      font-size: 1.4em;
+    }
+
+    #tab2 li {
+      list-style: none;
+    }
+
+    #tab2 ul li {
+      list-style: disc;
+    }
+
     #tab2 h3 {
       /* font-family: serif; */
       text-align: center;
@@ -302,6 +330,28 @@
       text-decoration: none;
     }
 
+    #tab2 div a:visited {
+      color: orangered;
+      text-decoration: none;
+    }
+
+    .n {
+      color: orangered;
+    }
+
     #tab2 b {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .title li span {
+      /* color:orangered; */
+      color: red;
+    }
+
+    .title li {
+      list-style: none;
+    }
+
+    .blanco div {
+      color: wheat;
     }
