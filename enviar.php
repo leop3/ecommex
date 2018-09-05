@@ -1,5 +1,4 @@
 <?php
-// echo "por que poronga no funcion"
 // *** Llamando a los campos ***
 $nombre= $_POST['nombre'];
 $correo= $_POST['correo'];
@@ -9,9 +8,9 @@ $mensaje= $_POST['mensaje'];
 $destinatario = "leoarancibiak@hotmail.com";
 $asunto = "Contacto desde la web";
 
-$carta = "De $nombre \n";
-$carta .= "Correo: $correo \n";// .= concatena
-$carta .= "Mensaje: $mensaje";
+$carta = "De:\t $nombre \n\n";
+$carta .= "Correo:\t $correo \n\n";// .= concatena
+$carta .= "Mensaje:\t $mensaje";
 
 
 // *** Enviando mensaje ***

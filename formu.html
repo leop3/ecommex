@@ -22,7 +22,7 @@
             </div>
             <div class="col-sm-8">
 
-                <form action="/enviar.php" method="post">
+                <form action="enviar.php" method="post">
                     <div>
                         <div class="row">
                             <label for="names" class="col-sm-6">Nombre:</label>
@@ -34,7 +34,7 @@
                         </div>
                         <div class="row">
                             <label for="mensaje" class="col-sm-6">Detalle:</label>
-                            <textarea id="mensaje" class="col-sm-6" placeholder="(Escriba su consulta.)" required></textarea>
+                            <textarea id="mensaje" name="mensaje" class="col-sm-6" placeholder="(Escriba su consulta.)" required></textarea>
                         </div>
                         <a href="mensajeEnviado.html">ENVIAR</a>
                         <input type="submit" value="Enviar" id="btnSend" class="btnF">

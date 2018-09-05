@@ -276,10 +276,6 @@
       text-align: center;
     }
 
-    .s {
-      font-family: cursive;
-    }
-
     .banner {
       text-align: center;
       border: solid;
@@ -313,7 +309,6 @@
     }
 
     #tab2 h3 {
-      /* font-family: serif; */
       text-align: center;
     }
 
@@ -322,9 +317,6 @@
       color: orangered;
     }
 
-    /* .parrafo{
-      font-family: fantasy;
-    } */
     #tab2 div a:hover {
       color: orangered;
       text-decoration: none;
@@ -339,12 +331,8 @@
       color: orangered;
     }
 
-    #tab2 b {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
 
     .title li span {
-      /* color:orangered; */
       color: red;
     }
 
