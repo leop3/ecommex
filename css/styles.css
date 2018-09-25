@@ -70,6 +70,7 @@
     }
 
     #menu ul {
+      font-family: "Windlesham";
       list-style: none;
       margin: 0;
       padding: 0;
@@ -78,7 +79,7 @@
     }
 
     #menu ul li {
-      display: inline-block;
+      display: inline-table;
       width: calc(100% / 8);
       /* margin: 1px; */
     }
@@ -149,7 +150,8 @@
     }
 
     .fondoecommerce {
-      background-image: url('fondo/ecfondo2.png');
+      /* background-image: url('fondo/ecfondo2.png'); */
+      background-image: url('fondo/ecommerce6.png');
       background-size: cover;
     }
 
@@ -269,7 +271,7 @@
     }
 
     .b {
-      font-weight: bolder;
+      font-weight: bold;
     }
 
     .c {
@@ -277,6 +279,7 @@
     }
 
     .banner {
+      font-family: "Windlesham";
       text-align: center;
       border: solid;
       padding-top: 2px;
@@ -312,6 +315,11 @@
       text-align: center;
     }
 
+    #tab2 h3 span {
+      text-shadow: 1px 1px orangered;
+      text-align: center;
+    }
+
     #tab2 div a {
       font-weight: bolder;
       color: orangered;
@@ -331,8 +339,11 @@
       color: orangered;
     }
 
-
     .title li span {
+      color: red;
+    }
+
+    .r {
       color: red;
     }
 
@@ -342,4 +353,15 @@
 
     .blanco div {
       color: wheat;
+    }
+
+    .undln {
+      text-decoration: underline;
+    }
+
+    .prom {
+      font-size: 1.3em;
+      animation-duration: 3s;
+      animation-name: slidein;
+      animation-iteration-count: infinite;
     }

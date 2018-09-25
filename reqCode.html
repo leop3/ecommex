@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="e requiredn">
+
+<head>
+    <meta charset="utf-8">
+    <br>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Código promocional</title>
+    <link rel="stylesheet" href="css/formustyles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body id="formBody" class="ecommerceBg">
+    <div class="container">
+        <div class="row">
+
+
+            <div class="row">
+                <div class="title">
+                    Escriba su correo eléctronico y recibirá su código promocional.
+                </div>
+            </div>
+            <form action="codigo.php" method="post">
+                <div class="row c">
+                    <label for="correo" class="col-sm-4 lab">Correo Electrónico</label>
+                    <input type="email" name="correo" id="correo" class="col-sm-4 inpu" placeholder="Escriba su Correo Electrónico"
+                        required>
+                    <div class="col-sm-4">
+                        <input type="submit" value="Enviar" id="btnSend" class="btn-danger lab btL">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
