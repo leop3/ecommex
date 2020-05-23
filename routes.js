@@ -26,8 +26,8 @@ var routes = ($stateProvider, $urlRouterProvider) => {
 
         })
         .state('trading', {
-            url: "/trading",
-            templateUrl: "partials/trading.html"
+            url: "/feria-virtual",
+            templateUrl: "partials/evento.html"
 
             })
         .state('contacto', {
