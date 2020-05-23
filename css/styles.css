@@ -415,6 +415,10 @@
       display: none;
     }
 
+    .displaynone{
+      display:none;
+    }
+
     @keyframes modal{
       100%{
         visibility: visible;
