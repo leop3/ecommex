@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="e requiredn">
+
+<head>
+    <meta charset="utf-8">
+    <br>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inscripcion - Feria virtual</title>
+    <link rel="stylesheet" href="css/formustyles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body id="formBody">
+    <div class="container">
+        <div class="row nubes" id="form">
+            <div>
+                <div style="width: 60%; height: 60%;">
+                    <img src="images/logoN-1.png" class="img">
+                </div>
+                <h2 style="text-align: center;">
+                    Feria Virtual - Inscripción
+                </h2>
+            </div>
+            <div class="row" style="margin-bottom: 5px;text-align: center;">Los campos marcados con un * son campos obligatorios.</div>
+            <div class="row col-sm-12">
+
+                <form action="enviar-inscripcion.php" method="post" class="formInscripcion">
+                        <div class="row">
+                            <label for="" class="col-sm-6">Razon social</label>
+                            <input type="text" id="razonSocial" name="razonSocial" class="col-sm-6" placeholder="(Razón Social)">
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-sm-3">Firmante</label>
+                            <input type="text" id="firmante" name="firmante" class="col-sm-3" placeholder="(Nombre del firmante)">
+                            
+                            <label for="" class="col-sm-3">Contacto*</label>
+                            <input type="text" id="contacto" name="contacto" class="col-sm-3" placeholder="(Persona de contacto)" required>
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-sm-3">País</label>
+                            <input type="text" id="pais" name="pais" class="col-sm-3" placeholder="(País)">
+                            
+                            <label for="" class="col-sm-3">Ciudad*</label>
+                            <input type="text" id="ciudad" name="ciudad" class="col-sm-3" placeholder="(Ciudad)" required>
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-sm-6">Dirección</label>
+                            <input type="text" id="direccion" name="direccion" class="col-sm-6" placeholder="(Dirección)">
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-sm-3">NIT/CUIT</label>
+                            <input type="text" id="cuit" name="cuit" class="col-sm-3" placeholder="(NIT/CUIT)">
+
+                            <label for="" class="col-sm-3">Teléfono fijo</label>
+                            <input type="text" id="telefono" name="telefono" class="col-sm-3" placeholder="(teléfono fijo)">
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-sm-6">Descripción</label>
+                            <textarea id="descripcion" name="descripcion" class="col-sm-6" placeholder="(Descripción de la emprea)" ></textarea>
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-sm-3">Pabellón-Sector*</label>
+                            <input type="text" id="pabellon" name="pabellon" class="col-sm-3" placeholder="(Pabellón-Sector)" required>
+
+                            <label for="" class="col-sm-3">N° Stand</label>
+                            <input type="number" id="stand" name="stand" class="col-sm-3" placeholder="(N° Stand)">
+                        </div>
+                        
+                        <div class="row">
+                            <label for="" class="col-sm-6">Productos</label>
+                            <textarea id="productos" name="productos" class="col-sm-6" placeholder="(Productos a exponer)"></textarea>
+                        </div>
+
+
+                        <div class="row">
+                            <label for="" class="col-sm-3">Whatsapp 1*</label>
+                            <input type="tel" id="wsp1" name="wsp1" class="col-sm-3" placeholder="(Numero de whatsapp 1 )" required>
+
+                            <label for="" class="col-sm-3">Whatsapp 2</label>
+                            <input type="text" id="wsp1" name="wsp2" class="col-sm-3" placeholder="(Numero de whatsapp 2)">
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-sm-6">E-Mail*</label>
+                            <input type="email" id="correo" name="correo" class="col-sm-6" placeholder="(correo electrónico)" required>
+
+                            <label for="" class="col-sm-6">Página web</label>
+                            <input type="text" id="pagina" name="pagina" class="col-sm-6" placeholder="(Página web)">
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-sm-6" style="margin-bottom: 3%;"><h3>Pagos</h3></label>
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-sm-6">Fecha</label>
+                            <input type="text" id="fecha" name="fecha" class="col-sm-6" placeholder="(Fecha de pago)">
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-sm-3">N° Depósito</label>
+                            <input type="text" id="deposito" name="deposito" class="col-sm-3" placeholder="(Número de depósito)">
+
+                            <label for="" class="col-sm-3">Total</label>
+                            <input type="text" id="total" name="total" class="col-sm-3" placeholder="(Importe total)">
+                        </div>
+
+                        <input type="submit" value="Enviar" id="btnSend" class="btnF">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

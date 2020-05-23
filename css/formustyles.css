@@ -22,6 +22,9 @@
     width: 350px;
     background-color: rgb(255, 127, 39);
     color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: rgb(255, 120, 39);
 }
 
 #form input {
@@ -29,6 +32,7 @@
     width: 350px;
     background-color: rgb(255, 127, 39);
     border-color: rgb(255, 127, 39);
+    border-radius: 5px;
     color: white;
 }
 
@@ -61,6 +65,7 @@
 .btnF {
     margin-top: 5%;
     margin-left: 19%;
+    margin-bottom: 1%;
     text-align: center;
     padding-bottom: 20px;
     /* padding: 10px 10px; */
@@ -70,6 +75,10 @@
     background-color: rgb(255, 127, 39);
     color: white;
     border-radius: 5%;
+}
+
+.btnf2{
+    margin-left: 100%;
 }
 
 .sent {
@@ -115,4 +124,8 @@
 }
 .btL{
     border-radius: 10%;
+}
+
+.formInscripcion input {
+    border-radius: 5px;
 }
