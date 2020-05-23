@@ -1,6 +1,6 @@
 <?php
 // *** Llamando a los campos ***
-$razon=$_POST['razonSocial']
+$razon=$_POST['razonSocial'];
 $firmante=$_POST['firmante'];
 $contacto=$_POST['contacto'];
 $pais=$_POST['pais'];
@@ -23,35 +23,36 @@ $total=$_POST['total'];
 
 // *** Datos para el correo ***
 // $destinatario = "info@mundo-comex.com.ar";
-$destinatario = "leoarancibiak@hotmail.com";
+$destinatario = "feria1virtual@gmail.com";
 $asunto = "Inscripcion feria";
+$from = 'inscripciones@ecommex.com.ar';
+$headers = "From:" . $from;
 
-// $carta = "De:\t $nombre \n\n";
-// $carta .= "Correo:\t $correo \n\n";// .= concatena
-// $carta .= "Mensaje:\t $mensaje";
-$carta = "Razon Social: $razon \n\n"
-$carta .= "firmante:\t $firmante \n\n";
-$carta .= "contacto:\t $contacto \n\n";
-$carta .= "pais:\t $pais \n\n";
-$carta .= "ciudad:\t $ciudad \n\n";
-$carta .= "direccion:\t $direccion \n\n";
-$carta .= "cuit:\t $cuit \n\n";
-$carta .= "telefono:\t $telefono \n\n";
-$carta .= "descripcion:\t $descripcion \n\n";
-$carta .= "pabellon:\t $pabellon \n\n";
-$carta .= "stand:\t $stand \n\n";
-$carta .= "productos:\t $productos \n\n";
-$carta .= "wsp1:\t $wsp1 \n\n";
-$carta .= "wsp2:\t $wsp2 \n\n";
-$carta .= "correo:\t $correo \n\n";
-$carta .= "pagina:\t $pagina \n\n";
-$carta .= "fecha:\t $fecha \n\n";
-$carta .= "deposito:\t $deposito \n\n";
-$carta .= "total:\t $total";
+// *** Cuerpo del mensaje ***
+$carta = "Razon Social:\t $razon \n\n";
+$carta .= "Firmante:\t $firmante \n\n";
+$carta .= "Contacto:\t $contacto \n\n";
+$carta .= "Pais:\t $pais \n\n";
+$carta .= "Ciudad:\t $ciudad \n\n";
+$carta .= "Direccion:\t $direccion \n\n";
+$carta .= "Cuit:\t $cuit \n\n";
+$carta .= "Telefono:\t $telefono \n\n";
+$carta .= "Descripcion:\t $descripcion \n\n";
+$carta .= "Pabellon:\t $pabellon \n\n";
+$carta .= "Stand:\t $stand \n\n";
+$carta .= "Productos:\t $productos \n\n";
+$carta .= "Wsp1:\t $wsp1 \n\n";
+$carta .= "Wsp2:\t $wsp2 \n\n";
+$carta .= "Correo:\t $correo \n\n";
+$carta .= "Pagina:\t $pagina \n\n";
+$carta .= "PAGO:\n";
+$carta .= "Fecha:\t $fecha \t";
+$carta .= "Deposito:\t $deposito \t";
+$carta .= "Total:\t $total";
 
 
 // *** Enviando mensaje ***
 
-mail($destinatario,$asunto,$carta);
+mail($destinatario,$asunto,$carta,$headers);
 header('Location:inscripcionEnviada.html');
 ?>
