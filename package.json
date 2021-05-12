@@ -16,7 +16,7 @@
     "cors": "^2.8.4",
     "http-server": "^0.12.3",
     "jquery": "^3.5.1",
-    "nodemailer": "^4.6.8"
+    "nodemailer": "^6.4.16"
   },
   "main": "app.js",
   "devDependencies": {},
